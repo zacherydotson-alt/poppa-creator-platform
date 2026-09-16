@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="POPPA — a creator-forward space for original work, art, and connection."
+  />
+  <meta name="theme-color" content="#0b0c0c" />
+  <title>POPPA | Made Loud. Made Real.</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="stamp">Private Creator Space</div>
+      <h1 id="gateTitle">POPPA</h1>
+      <p>
+        This space is intended for adults. By entering, you confirm that you are at least 18 years old
+        and agree to use the site respectfully and legally.
+      </p>
+      <div class="gate-actions">
+        <button class="button button-primary" id="enterButton">I am 18+ — Enter</button>
+        <a class="button button-secondary" href="https://www.google.com/">Exit</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <a class="logo" href="#top" aria-label="Poppa home">
+        <svg viewBox="0 0 120 60" width="120" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- P -->
+          <path d="M10 50V10H28C34 10 38 14 38 20C38 26 34 30 28 30H16V50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- O -->
+          <circle cx="58" cy="30" r="20" stroke="currentColor" stroke-width="2.5"/>
+          <!-- P -->
+          <path d="M92 50V10H110C116 10 120 14 120 20C120 26 116 30 110 30H98V50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Accent line -->
+          <line x1="58" y1="50" x2="58" y2="58" stroke="#ce562d" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#featured">Featured</a>
+        <a href="#how-it-works">The Space</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Forged for original people</div>
+        <h1>MADE <em>LOUD.</em><br />MADE REAL.</h1>
+        <p>
+          Poppa is a hard-edged home for art, independent creators, strange ideas,
+          and work with a pulse. No plastic perfection. Just original people making original things.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#featured">See the work</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="steel-card" aria-label="Poppa featured collection">
+        <div class="steel-card-inner">
+          <small>Now showing</small>
+          <strong>THE<br />FOUNDRY<br />COLLECTION</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured">
+      <div class="section-top">
+        <div>
+          <div class="eyebrow">Featured makers</div>
+          <h2>Work that leaves a mark.</h2>
+        </div>
+        <p class="section-note">
+          Discover creators pushing boundaries with original work across all mediums.
+        </p>
+      </div>
+
+      <div class="grid" id="creatorsGrid">
+        <!-- Dynamically loaded creator cards -->
+      </div>
+    </section>
+
+    <div class="feature-band" id="how-it-works">
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-number">01 / CREATE</div>
+          <h3>Show the work</h3>
+          <p>Give every piece a home, a story, and a way for people to find it.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-number">02 / CONNECT</div>
+          <h3>Keep it human</h3>
+          <p>Real conversations, clear boundaries, and respect for the people behind the work.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-number">03 / BUILD</div>
+          <h3>Make it bigger</h3>
+          <p>Turn independent ideas into a living collection, community, and next move.</p>
+        </article>
+      </div>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="contact-box">
+        <div class="eyebrow">Want in?</div>
+        <h2>Bring something<br />real to Poppa.</h2>
+        <p>
+          Have a question, want to feature your work, or need to reach the person behind the project?
+          Send a message and we'll get back to you.
+        </p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="button button-primary">Send Message</button>
+            <button type="reset" class="button button-secondary">Clear</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> POPPA. All work stays with its creator.</span>
+    <span>Original work. Clear boundaries. Real people.</span>
+  </footer>
+
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
