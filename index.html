@@ -12,12 +12,7 @@
   <header>
     <div class="nav">
       <a class="logo" href="#top" aria-label="Poppa home">
-        <svg viewBox="0 0 120 60" width="120" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 50V10H28C34 10 38 14 38 20C38 26 34 30 28 30H16V50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="58" cy="30" r="20" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M92 50V10H110C116 10 120 14 120 20C120 26 116 30 110 30H98V50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="58" y1="50" x2="58" y2="58" stroke="#ce562d" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
+        <span class="logo-mark" aria-label="POPPA">POPPA</span>
       </a>
       <nav aria-label="Main navigation">
         <a href="#gallery">Gallery</a>
@@ -28,158 +23,60 @@
   </header>
 
   <main id="top">
-    <!-- Hero Section -->
     <section class="hero">
       <div>
         <div class="eyebrow">Contemporary Artist</div>
         <h1>Original <em>Artwork</em><br />By Me</h1>
-        <p>
-          Welcome to my art portfolio. I create original pieces that push boundaries and tell stories.
-          Each work is unique and available for purchase. Exploring gallery representation opportunities.
-        </p>
+        <p>Welcome to my art portfolio. I create original pieces that push boundaries and tell stories. Each work is unique and available for purchase. Exploring gallery representation opportunities.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#gallery">View Gallery</a>
           <a class="button button-secondary" href="#contact">Get in Touch</a>
         </div>
       </div>
-
-      <div class="hero-visual">
-        <div class="visual-placeholder">Gallery Preview</div>
-      </div>
+      <div class="hero-visual"><div class="visual-placeholder">Gallery Preview</div></div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery">
       <div class="section-top">
-        <div>
-          <div class="eyebrow">My Work</div>
-          <h2>Original Artwork</h2>
-        </div>
-        <p class="section-note">
-          Each piece is one-of-a-kind. Click to view details and purchase options.
-        </p>
+        <div><div class="eyebrow">My Work</div><h2>Original Artwork</h2></div>
+        <p class="section-note">Each piece is one-of-a-kind. Click to view details and purchase options.</p>
       </div>
-
-      <div class="gallery-grid" id="galleryGrid">
-        <!-- Artwork cards loaded dynamically -->
-      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
     </section>
 
-    <!-- Features Section -->
     <div class="feature-band" id="features">
       <div class="feature-grid">
-        <article class="feature">
-          <div class="feature-number">01</div>
-          <h3>Original Work</h3>
-          <p>Every piece is created by hand. No prints, no reproductions. Authentic art.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-number">02</div>
-          <h3>Direct Sale</h3>
-          <p>Buy directly from the artist. Fair prices, secure transactions, fast shipping.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-number">03</div>
-          <h3>Gallery Ready</h3>
-          <p>Work available for gallery exhibitions and curatorial consideration.</p>
-        </article>
+        <article class="feature"><div class="feature-number">01</div><h3>Original Work</h3><p>Every piece is created by hand. No prints, no reproductions. Authentic art.</p></article>
+        <article class="feature"><div class="feature-number">02</div><h3>Direct Sale</h3><p>Buy directly from the artist. Fair prices, secure transactions, fast shipping.</p></article>
+        <article class="feature"><div class="feature-number">03</div><h3>Gallery Ready</h3><p>Work available for gallery exhibitions and curatorial consideration.</p></article>
       </div>
     </div>
 
-    <!-- About Section -->
     <section id="about">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>About My Practice</h2>
-          <p>
-            I'm an artist dedicated to creating meaningful, original work that challenges perspective and sparks conversation. My practice spans multiple mediums, each chosen intentionally to express the ideas behind every piece.
-          </p>
-          <p>
-            I'm actively pursuing gallery representation and exhibition opportunities. If you're a curator, collector, or fellow creative, I'd love to connect.
-          </p>
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-value">50+</span>
-              <span class="stat-label">Works Created</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">30+</span>
-              <span class="stat-label">Pieces Sold</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">15+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="about-content"><div class="about-text">
+        <h2>About My Practice</h2>
+        <p>I'm an artist dedicated to creating meaningful, original work that challenges perspective and sparks conversation. My practice spans multiple mediums, each chosen intentionally to express the ideas behind every piece.</p>
+        <p>I'm actively pursuing gallery representation and exhibition opportunities. If you're a curator, collector, or fellow creative, I'd love to connect.</p>
+        <div class="stats-row"><div class="stat"><span class="stat-value">50+</span><span class="stat-label">Works Created</span></div><div class="stat"><span class="stat-value">30+</span><span class="stat-label">Pieces Sold</span></div><div class="stat"><span class="stat-value">15+</span><span class="stat-label">Years Experience</span></div></div>
+      </div></div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="contact-box">
-        <div class="eyebrow">Let's Connect</div>
-        <h2>Interested in my work?</h2>
-        <p>
-          Whether you want to purchase, discuss a commission, or explore gallery opportunities, I'd love to hear from you.
-        </p>
-        <form id="contactForm" class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="button button-primary">Send Message</button>
-            <button type="reset" class="button button-secondary">Clear</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    <section class="contact" id="contact"><div class="contact-box">
+      <div class="eyebrow">Let's Connect</div><h2>Interested in my work?</h2>
+      <p>Whether you want to purchase, discuss a commission, or explore gallery opportunities, I'd love to hear from you.</p>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required /></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required /></div></div>
+        <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required /></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+        <div class="form-actions"><button type="submit" class="button button-primary">Send Message</button><button type="reset" class="button button-secondary">Clear</button></div>
+      </form>
+    </div></section>
   </main>
 
-  <footer>
-    <span>© <span id="year"></span> POPPA Art. All rights reserved.</span>
-    <span>Crafted with intention. Made to last.</span>
-  </footer>
+  <footer><span>© <span id="year"></span> POPPA Art. All rights reserved.</span><span>Crafted with intention. Made to last.</span></footer>
 
-  <!-- Artwork Modal -->
-  <div id="artworkModal" class="modal">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <div class="modal-body">
-        <div class="modal-image">
-          <img id="modalImage" src="" alt="" />
-        </div>
-        <div class="modal-info">
-          <h2 id="modalTitle"></h2>
-          <p class="modal-medium" id="modalMedium"></p>
-          <p class="modal-price" id="modalPrice"></p>
-          <p id="modalDescription"></p>
-          <div class="modal-actions">
-            <button class="button button-primary" id="buyBtn">Inquire / Purchase</button>
-            <button class="button button-secondary" onclick="closeModal()">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <div id="artworkModal" class="modal"><div class="modal-content"><button class="modal-close" onclick="closeModal()">&times;</button><div class="modal-body"><div class="modal-image"><img id="modalImage" src="" alt="" /></div><div class="modal-info"><h2 id="modalTitle"></h2><p class="modal-medium" id="modalMedium"></p><p class="modal-price" id="modalPrice"></p><p id="modalDescription"></p><div class="modal-actions"><button class="button button-primary" id="buyBtn">Inquire / Purchase</button><button class="button button-secondary" onclick="closeModal()">Close</button></div></div></div></div></div>
   <div class="notice" id="notice" role="status" aria-live="polite"></div>
-
   <script src="app.js"></script>
 </body>
 </html>
